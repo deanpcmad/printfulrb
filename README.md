@@ -142,6 +142,17 @@ If you have an account level token, you can set a Store ID like so:
 @client.orders.confirm id: 123123
 ```
 
+### Files
+
+```ruby
+# Retrieve a file
+@client.files.retrieve id: 123123
+
+# Create a file
+# More info: https://developers.printful.com/docs/#operation/addFile
+@client.files.create url: "https://myfileurl.com/file.png"
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/deanpcmad/printfulrb.

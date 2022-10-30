@@ -161,6 +161,24 @@ If you have an account level token, you can set a Store ID like so:
 @client.shipping_rates.calculate recipient: {}, items: []
 ```
 
+## Mockup Generator
+
+```ruby
+# Retrieve a list of templates that can be used for client-side positioning
+@client.mockup_generator.templates id: 123
+
+# Retrieve a list of print files for a product
+@client.mockup_generator.printfiles id: 123
+
+# Create a Mockup Generator task
+# This API is rate limited
+# More info: https://developers.printful.com/docs/#operation/createGeneratorTask
+@client.mockup_generator.create id: 123, variant_ids: [123], files: [{placement: "front", url: "https://host.com/file.png", position: {}}]
+
+# Retrieve mockup generator task result
+@client.mockup_generator.retrieve id: "abc123"
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/deanpcmad/printfulrb.

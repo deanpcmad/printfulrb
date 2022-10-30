@@ -43,6 +43,10 @@ module Printful
       ShippingRatesResource.new(self)
     end
 
+    def mockup_generator
+      MockupGeneratorResource.new(self)
+    end
+
     def connection
       url = "https://api.printful.com"
 

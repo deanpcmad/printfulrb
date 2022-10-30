@@ -19,6 +19,7 @@ module Printful
   autoload :OrdersResource, "printful/resources/orders"
   autoload :FilesResource, "printful/resources/files"
   autoload :ShippingRatesResource, "printful/resources/shipping_rates"
+  autoload :MockupGeneratorResource, "printful/resources/mockup_generator"
 
   autoload :Product, "printful/objects/product"
   autoload :ProductSize, "printful/objects/product_size"
@@ -30,5 +31,8 @@ module Printful
   autoload :Cost, "printful/objects/cost"
   autoload :File, "printful/objects/file"
   autoload :ShippingRate, "printful/objects/shipping_rate"
+  autoload :MockupTask, "printful/objects/mockup_task"
+  autoload :MockupPrintfile, "printful/objects/mockup_printfile"
+  autoload :MockupTemplate, "printful/objects/mockup_template"
 
 end

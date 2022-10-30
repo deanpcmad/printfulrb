@@ -153,6 +153,14 @@ If you have an account level token, you can set a Store ID like so:
 @client.files.create url: "https://myfileurl.com/file.png"
 ```
 
+### Shipping Rates
+
+```ruby
+# Returns available shipping options and rates for a given list of products
+# More info: https://developers.printful.com/docs/#operation/calculateShippingRates
+@client.shipping_rates.calculate recipient: {}, items: []
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/deanpcmad/printfulrb.

@@ -39,6 +39,10 @@ module Printful
       FilesResource.new(self)
     end
 
+    def shipping_rates
+      ShippingRatesResource.new(self)
+    end
+
     def connection
       url = "https://api.printful.com"
 

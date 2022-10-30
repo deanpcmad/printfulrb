@@ -18,6 +18,7 @@ module Printful
   autoload :ProductTemplatesResource, "printful/resources/product_templates"
   autoload :OrdersResource, "printful/resources/orders"
   autoload :FilesResource, "printful/resources/files"
+  autoload :ShippingRatesResource, "printful/resources/shipping_rates"
 
   autoload :Product, "printful/objects/product"
   autoload :ProductSize, "printful/objects/product_size"
@@ -28,5 +29,6 @@ module Printful
   autoload :Order, "printful/objects/order"
   autoload :Cost, "printful/objects/cost"
   autoload :File, "printful/objects/file"
+  autoload :ShippingRate, "printful/objects/shipping_rate"
 
 end

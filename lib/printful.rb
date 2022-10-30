@@ -16,6 +16,7 @@ module Printful
   autoload :ProductsResource, "printful/resources/products"
   autoload :VariantsResource, "printful/resources/variants"
   autoload :ProductTemplatesResource, "printful/resources/product_templates"
+  autoload :OrdersResource, "printful/resources/orders"
 
   autoload :Product, "printful/objects/product"
   autoload :ProductSize, "printful/objects/product_size"
@@ -23,5 +24,7 @@ module Printful
   autoload :Variant, "printful/objects/variant"
   autoload :Store, "printful/objects/store"
   autoload :ProductTemplate, "printful/objects/product_template"
+  autoload :Order, "printful/objects/order"
+  autoload :Cost, "printful/objects/cost"
 
 end

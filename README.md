@@ -114,6 +114,34 @@ If you have an account level token, you can set a Store ID like so:
 @client.product_templates.delete id: 123123
 ```
 
+### Orders
+
+```ruby
+# List all orders
+@client.orders.list
+
+# Retrieve an order
+@client.order.retrieve id: 123123
+
+# Create an order
+# More info: https://developers.printful.com/docs/#operation/createOrder
+@client.orders.create recipient: {}, items: []
+
+# Estimate order costs
+# More info: https://developers.printful.com/docs/#operation/estimateOrderCosts
+@client.orders.estimate recipient: {}, items: []
+
+# Update an order
+# More info: https://developers.printful.com/docs/#operation/updateOrderById
+@client.orders.update id: 123123, recipient: {}, items: []
+
+# Cancel an order
+@client.orders.cancel id: 123123
+
+# Confirm an order
+@client.orders.confirm id: 123123
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/deanpcmad/printfulrb.

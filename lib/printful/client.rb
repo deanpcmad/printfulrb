@@ -1,9 +1,10 @@
 module Printful
   class Client
-    attr_reader :access_token, :adapter
+    attr_reader :access_token, :store_id, :adapter
 
-    def initialize(access_token:, adapter: Faraday.default_adapter, stubs: nil)
+    def initialize(access_token:, store_id: nil, adapter: Faraday.default_adapter, stubs: nil)
       @access_token = access_token
+      @store_id = store_id
       @adapter = adapter
 
       # Test stubs for requests
@@ -24,6 +25,10 @@ module Printful
       @connection ||= Faraday.new(url) do |conn|
         conn.request :authorization, :Bearer, access_token
         conn.request :json
+
+        if store_id
+          conn.headers["X-PF-Store-Id"] = store_id
+        end
 
         conn.response :json
 

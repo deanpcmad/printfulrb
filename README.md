@@ -22,6 +22,12 @@ The Printful API requires authentication with an access token.
 @client = Printful::Client.new(access_token: "abc123")
 ```
 
+If you have an account level token, you can set a Store ID like so:
+
+```ruby
+@client = Printful::Client.new(store_id: 123, access_token: "abc123")
+```
+
 ### Stores
 
 ```ruby

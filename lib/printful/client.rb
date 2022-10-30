@@ -14,6 +14,10 @@ module Printful
       CatalogResource.new(self)
     end
 
+    def stores
+      StoresResource.new(self)
+    end
+
     def connection
       url = "https://api.printful.com"
 

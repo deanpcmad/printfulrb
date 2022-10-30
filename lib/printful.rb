@@ -12,10 +12,12 @@ module Printful
   autoload :Object, "printful/object"
   
   autoload :CatalogResource, "printful/resources/catalog"
+  autoload :StoresResource, "printful/resources/stores"
 
   autoload :Product, "printful/objects/product"
   autoload :ProductSize, "printful/objects/product_size"
   autoload :Category, "printful/objects/category"
   autoload :Variant, "printful/objects/variant"
+  autoload :Store, "printful/objects/store"
 
 end

@@ -22,6 +22,16 @@ The Printful API requires authentication with an access token.
 @client = Printful::Client.new(access_token: "abc123")
 ```
 
+### Stores
+
+```ruby
+# Retrieve a list of stores depending on token access
+@client.stores.list
+
+# Retrieve store info
+@client.stores.retrieve id: 123
+```
+
 ### Catalog
 
 ```ruby

@@ -27,6 +27,10 @@ module Printful
       VariantsResource.new(self)
     end
 
+    def product_templates
+      ProductTemplatesResource.new(self)
+    end
+
     def connection
       url = "https://api.printful.com"
 

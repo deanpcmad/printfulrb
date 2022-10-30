@@ -15,11 +15,13 @@ module Printful
   autoload :StoresResource, "printful/resources/stores"
   autoload :ProductsResource, "printful/resources/products"
   autoload :VariantsResource, "printful/resources/variants"
+  autoload :ProductTemplatesResource, "printful/resources/product_templates"
 
   autoload :Product, "printful/objects/product"
   autoload :ProductSize, "printful/objects/product_size"
   autoload :Category, "printful/objects/category"
   autoload :Variant, "printful/objects/variant"
   autoload :Store, "printful/objects/store"
+  autoload :ProductTemplate, "printful/objects/product_template"
 
 end

@@ -101,7 +101,18 @@ If you have an account level token, you can set a Store ID like so:
 @client.variants.delete id: 123123
 ```
 
+### Product Templates
 
+```ruby
+# List all product templates
+@client.product_templates.list
+
+# Retrieve a product template
+@client.product_templates.retrieve id: 123123
+
+# Delete a product template
+@client.product_templates.delete id: 123123
+```
 
 ## Contributing
 

@@ -163,6 +163,9 @@ If you have an account level token, you can set a Store ID like so:
 
 ## Mockup Generator
 
+This API is complex and you'll need to read through the [API docs](https://developers.printful.com/docs/#tag/Mockup-Generator-API)
+to learn how to use it properly.
+
 ```ruby
 # Retrieve a list of templates that can be used for client-side positioning
 @client.mockup_generator.templates id: 123

@@ -61,6 +61,48 @@ If you have an account level token, you can set a Store ID like so:
 @client.catalog.category id: "123"
 ```
 
+### Products
+
+```ruby
+# Returns a list of products for a store
+@client.products.list
+
+# Retrieve a product
+@client.products.retrieve id: 123123
+
+# Create a product
+# More info: https://developers.printful.com/docs/#operation/createSyncProduct
+@client.products.create product: {name: "My Product"}, variants: [{variant_id: 4011, retail_price: "20.00", files: [{url: "http://myfileurl.com/file.png"}]}]
+
+# Update a product
+# More info: https://developers.printful.com/docs/#operation/updateSyncProduct
+@client.products.update id: 123123, product: {name: "My Product"}, variants: [{variant_id: 4011, retail_price: "20.00", files: [{url: "http://myfileurl.com/file.png"}]}]
+
+# Delete a product
+@client.products.delete id: 123123
+```
+
+### Product Variants
+
+```ruby
+# Retrieve a variant
+@client.variants.retrieve id: 123123
+
+# Create a variant
+# ID would be the Product ID
+# More info: https://developers.printful.com/docs/#operation/createSyncVariant
+@client.variants.create id: 123123, variant_id: 4011, retail_price: "20.00", files: [{url: "http://myfileurl.com/file.png"}]
+
+# Update a variant
+# More info: https://developers.printful.com/docs/#operation/updateSyncVariant
+@client.variants.update id: 123123, retail_price: "25.00"
+
+# Delete a variant
+@client.variants.delete id: 123123
+```
+
+
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/deanpcmad/printfulrb.

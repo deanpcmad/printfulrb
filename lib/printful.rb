@@ -13,6 +13,8 @@ module Printful
   
   autoload :CatalogResource, "printful/resources/catalog"
   autoload :StoresResource, "printful/resources/stores"
+  autoload :ProductsResource, "printful/resources/products"
+  autoload :VariantsResource, "printful/resources/variants"
 
   autoload :Product, "printful/objects/product"
   autoload :ProductSize, "printful/objects/product_size"
